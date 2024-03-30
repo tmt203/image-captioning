@@ -1,6 +1,7 @@
 .ipynb_checkpoints/
 __pycache__/
 opt/
+models/
 0_Dataset.ipynb
 1_Preliminaries.ipynb
 2_Training.ipynb
