@@ -1,0 +1,8 @@
+.ipynb_checkpoints/
+__pycache__/
+opt/
+0_Dataset.ipynb
+1_Preliminaries.ipynb
+2_Training.ipynb
+3_Inference.ipynb
+filelist.txt
