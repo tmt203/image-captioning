@@ -87,6 +87,20 @@ class Vocabulary(object):
         for i, word in enumerate(words):
             self.add_word(word)
 
+    def word2idx(self, word):
+        """Convert word to its corresponding index."""
+        if word in self.word2idx:
+            return self.word2idx[word]
+        else:
+            return self.word2idx[self.unk_word]
+
+    def idx2word(self, idx):
+        """Convert index to its corresponding word."""
+        if idx in self.idx2word:
+            return self.idx2word[idx]
+        else:
+            return self.unk_word
+
     def __call__(self, word):
         if not word in self.word2idx:
             return self.word2idx[self.unk_word]
